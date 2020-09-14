@@ -1,0 +1,10 @@
+@mixin dimensions ($w,$h){
+  width: $w;
+  height: $h;
+}
+
+@mixin position ($p,$m,$f){
+  padding: $p;
+  margin: $m;
+  float: $f;
+}

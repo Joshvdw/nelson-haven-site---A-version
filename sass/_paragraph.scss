@@ -1,0 +1,55 @@
+.paragraph__container {
+  float: left;
+  width: 50%;
+  font-size: 14px;
+  padding: 0 20px;
+  p {
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-position: inside;
+    margin-bottom: 20px;
+    list-style-type: circle;
+  }
+}
+
+h1 {
+  color: $secondary-color;
+  text-align: left;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  padding-left: 20px;
+}
+
+.email-link {
+  color: $link-color;
+}
+
+.p-style {
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.upload__container {
+  padding-left: 20px;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.upload__container {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.donate-text, .funding__container p {
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.funding__container {
+  margin-top: 25px;
+  p {
+    margin-bottom: 20px;
+  }
+
+}
