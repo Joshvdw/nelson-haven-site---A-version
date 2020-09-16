@@ -1,5 +1,5 @@
 // HEADER
-.header__container {
+.header__container-desktop, .header__container-mobile {
   width: 100%;
   height: 128px;
   font-family: $primary-font;
@@ -23,9 +23,11 @@
   margin: 0 auto;
 }
 
-// NAV
-.nav__container {
+// NAV DESKTOP
+.nav__container-desktop {
   float: left;
+  margin: 75px 0 0 20px;
+  font-size: 18px;
   li {
     display: inline;
     padding: 5px 10px;
@@ -38,30 +40,19 @@
 
 // DESKTOP NAV
 .desktop-nav {
-  margin: 75px 0 0 20px;
-  font-size: 18px;
-}
 
-// MOBILE NAV
-.mobile-nav {
-  li a {text-decoration: none; color: white;}
 }
 
 // MOBILE HEADER
-.mobile__header {
+.header__container-mobile {
   display: none;
 }
 
-// HAMBURGER MENU
-.fas {
-  color: white;
-}
-
-hr {
-  opacity: 0.8;
-  height: 0.2px;
-  position: relative;
-  top: 85px;
-  right: 230px;
-  width: 225px;
-}
+// hr {
+//   opacity: 0.8;
+//   height: 0.2px;
+//   position: relative;
+//   top: 85px;
+//   right: 230px;
+//   width: 225px;
+// }

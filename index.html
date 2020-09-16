@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b90b691793.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,500&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/jquery-ui.min.css" integrity="sha512-f8DSGsz24/tHdtize3J1T8ukPI7ya7T7l0infAkw/2LnVAgUr3QvEBNBhWgto/qFaxax2vtPZa39kLRpzjLJrA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/excite-bike/jquery-ui.min.css" integrity="sha512-U0TWwF2UmIE98Ch5Dl/ReSZL+pRSyoAxoUI4D0dYeTgN6O/ScvmD4mHXHNS5NzOwE9ldInwDyeDF/N9OvoHZyQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" >
     <title>Friends of Nelson Haven & Tasman Bay Inc</title>
   </head>
@@ -14,7 +14,7 @@
 <!-- DESKTOP HEADER -->
 
 <!-- LOGO -->
-    <header class="header__container">
+    <header class="header__container-desktop">
       <div class="desktop__header">
 
         <div class="logo__container">
@@ -22,7 +22,7 @@
         </div>
 
 <!-- NAV BAR-->
-        <div class="nav__container desktop-nav">
+        <div class="nav__container-desktop">
           <ul>
             <li class="nav-home" >HOME</li>
             <li class="nav-history">HISTORY</li>
@@ -48,9 +48,11 @@
 <!-- MOBILE HEADER -->
 
 <!-- LOGO -->
-    <header class="header__container mobile__header">
+    <header class="header__container-mobile">
       <div class="logo__container">
-        <img class="logo__img" src="images/logo.png" alt="Nelson Haven Logo">
+        <div class="logo__sub-container">
+          <img class="logo__img" src="images/logo.png" alt="Nelson Haven Logo">
+        </div>
       </div>
 
 <!-- HAMBURGER MENU -->
@@ -59,24 +61,27 @@
       </div>
 
 <!-- NAV BAR-->
-      <div class="nav__container mobile-nav">
+      <div class="nav__container-mobile">
         <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#history">HISTORY</a></li>
-          <li><a href="#photos">PHOTOS</a></li>
-          <li><a href="#donations">DONATIONS</a></li>
+          <li class="nav-home" >HOME</li>
+          <li class="nav-history">HISTORY</li>
+          <li class="nav-photos">PHOTOS</li>
           <hr>
 <!-- MEMBERSHIP BUTTON -->
-          <div class="membership-btn__container">
-            <div class="cta__btn membership-btn">
-              <a href="#memberships"><p>MEMBERSHIPS</p></a>
-            </div>
+        <div class="membership-btn__container nav-memberships">
+          <div class="cta__btn membership-btn">
+            <p>MEMBERSHIPS</p>
           </div>
+        </div>
+<!-- DONATE BUTTON -->
+        <div class="donate-btn__container nav-donations">
+          <div class="cta__btn donate-btn">
+            <p>DONATIONS</p>
+          </div>
+        </div>
         </ul>
       </div>
     </header>
-
-
 
 <!-- HOME SECTION -->
     <section id="home" class="clearfix">
@@ -148,13 +153,121 @@
     <section id="photos">
       <h1>PHOTOS</h1>
       <div class="photo__container clearfix">
-        <div class="gallery-wrapper left-img">
-          <img src="images/Haulashore-Island.jpg" alt="Photo of Haulashore-Island">
-        </div>
+<!-- LIGHTBOX -->
+          <div class="row">
+            <div class="column">
+              <img src="images/Haulashore-Island.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow photo-style">
+            </div>
+            <div class="column">
+              <img src="images/Back-Beach.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow photo-style">
+            </div>
+            <div class="column">
+              <img src="images/Tahunanui.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow photo-style">
+            </div>
+            <div class="column">
+              <img src="images/Pine-Factory.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow photo-style">
+            </div>
+            <div class="column">
+              <img src="images/Seafarers-Nelson.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow photo-style">
+            </div>
+            <div class="column">
+              <img src="images/Nelson-Estuary.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow photo-style">
+            </div>
+          </div>
+
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="images/Haulashore-Island.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="images/Back-Beach.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="images/Tahunanui.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/Pine-Factory.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="images/Seafarers-Nelson.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/Nelson-Estuary.jpg" style="width:100%">
+              </div>
+
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <!-- Thumbnail image controls -->
+              <div class="column col-thumbnail">
+                <img class="demo photo-style" src="images/Haulashore-Island.jpg" onclick="currentSlide(1)" alt="Haulashore-Island">
+              </div>
+
+              <div class="column col-thumbnail">
+                <img class="demo photo-style" src="images/Back-Beach.jpg" onclick="currentSlide(2)" alt="Back-Beach">
+              </div>
+
+              <div class="column col-thumbnail">
+                <img class="demo photo-style" src="images/Tahunanui.jpg" onclick="currentSlide(3)" alt="Tahunanui">
+              </div>
+
+              <div class="column col-thumbnail">
+                <img class="demo photo-style" src="images/Pine-Factory.jpg" onclick="currentSlide(4)" alt="Pine-Factory">
+              </div>
+
+              <div class="column col-thumbnail">
+                <img class="demo photo-style" src="images/Seafarers-Nelson.jpg" onclick="currentSlide(5)" alt="Seafarers-Nelson">
+              </div>
+
+              <div class="column col-thumbnail">
+                <img class="demo photo-style" src="images/Nelson-Estuary.jpg" onclick="currentSlide(6)" alt="Nelson-Estuary">
+              </div>
+            </div>
+          </div>
+        <!-- <div class="gallery-wrapper left-img"> -->
+          <!-- <img id="myImg" src="images/Haulashore-Island.jpg" alt="Haulashore-Island"> -->
+
+          <!-- Modal -->
+          <!-- <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          <img src="images/Haulashore-Island.jpg" alt="Photo of Haulashore-Island"> -->
+        <!-- </div>
         <div class="gallery-wrapper middle-img">
-          <img src="images/Back-Beach.jpg" alt="Photo of Back-Beach">
-        </div>
-        <div class="gallery-wrapper right-img">
+          <img id="myImg" src="images/Back-Beach.jpg" alt="Back-Beach"> -->
+
+          <!-- Modal -->
+          <!-- <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div> -->
+          <!-- <img src="images/Back-Beach.jpg" alt="Photo of Back-Beach"> -->
+        <!-- </div> -->
+        <!-- <div class="gallery-wrapper right-img">
           <img src="images/Tahunanui.jpg" alt="Photo of Tahunanui">
         </div>
         <div class="gallery-wrapper left-img">
@@ -165,7 +278,7 @@
         </div>
         <div class="gallery-wrapper right-img">
           <img src="images/Seafarers-Nelson.jpg" alt="Photo of Seafarers-Nelson">
-        </div>
+        </div> -->
       </div>
 
       <div class="upload__container">
@@ -185,26 +298,83 @@
         we need substantial funds for both research and expert assistance.  Our funds come from our members, member groups, business and government.
         Much of our work is done pro bono or at reduced fees but the costs are still in the tens of thousands of dollars.</p>
 
-<!-- jQuery tabs section here -->
+<!-- jQuery TABS -->
         <div class="donate__container clearfix">
-            <p>table</p>
-          <div class="donation__options">
-
-            <div class="cta__btn donate-btn">
-              <p>DONATE</p>
+          <div class="donate__tabs">
+            <div id="tabs">
+              <ul>
+                <li><a class="card" href="#tabs-1">CARD</a></li>
+                <li><a href="#tabs-2">CHEQUE</a></li>
+                <li><a href="#tabs-3">BANK TRANSFER</a></li>
+              </ul>
+              <div id="tabs-1">
+                <form class="card-form" action="index.html" method="post">
+                  <label for="fname">First name</label><br>
+                  <input type="text" id="fname" class="long-input" name="fname"><br><br>
+                  <label for="lname">Last name</label><br>
+                  <input type="text" id="lname" class="long-input" name="lname"><br><br>
+                  <label for="email">Email</label><br>
+                  <input type="text" id="email" class="long-input" name="email"><br><br><br>
+                  <!-- <label for="cardname">Card name</label><br>
+                  <input type="text" id="cardname" class="long-input" name="cardname"><br><br> -->
+                  <label for="cardno">Card number</label><br>
+                  <input type="text" id="cardno" class="long-input" name="cardno"><br><br>
+                  <div class="expiry-cvc_containers clearfix">
+                    <div class="expiry__container">
+                      <label for="expiry">Expiry Date</label><br>
+                      <input type="text" id="expiry1" name="expiry">
+                      <input type="text" id="expiry2" name="expiry">
+                    </div>
+                    <div class="cvc__container">
+                      <label for="cvc">CVC</label><br>
+                      <input type="text" id="cvc" name="cvc"><br><br>
+                    </div>
+                  </div>
+                </form>
+                <div class="donation__options">
+                  <div class="cta__btn card-donate-btn">
+                    <p>DONATE</p>
+                  </div>
+                  <br>
+                </div>
+              </div>
+              <div id="tabs-2">
+                <br>
+                <p>Please send a cheque together with your</p><br><br>
+                <ul>
+                  <li>Name</li>
+                  <li>Occupation / Interests</li>
+                  <li>Address</li>
+                  <li>Contact Details</li>
+                </ul>
+                <br><br>
+                <p>To:</p>
+                <br>
+                <p>Friends of Nelson Haven & Tasman Bay Inc. c/o</p>
+                <p>72 Mapua Drive, RD 1,</p>
+                <p>Upper Moutere 7173.</p>
+              </div>
+              <div id="tabs-3">
+                <br>
+                <p>Please make a donation through direct credit</p><br><br>
+                <p>Westpac account</p>
+                <p>03-0703-0453751-00</p><br><br>
+                <p>Please also email us your name, address, phone and occupation/interests</p><br>
+                <p><a href="mailto:em@nelsonhaven.org.nz">em@nelsonhaven.org.nz</a></p>
+              </div>
             </div>
           </div>
 
           <div class="img__container donate-img">
             <img src="images/Haulashore-Island.jpg" alt="Photo of Haulashore-Island">
           </div>
+
         </div>
     </section>
 
 <!-- MEMBERSHIP SECTION -->
     <section id="memberships">
       <div class="membership__container clearfix">
-
         <h1>MEMBERSHIPS</h1>
         <div class="paragraph__container membership-text">
           <p>Please Consider joining the Society or give a donation</p>
@@ -214,23 +384,23 @@
               <th>AMOUNT</th>
             </tr>
             <tr>
-              <td>SINGLE MEMBER</td>
+              <td class="members">SINGLE MEMBER</td>
               <td>$12.00</td>
             </tr>
             <tr>
-              <td>TWO IN A HOUSEHOLD</td>
+              <td class="members">TWO IN A HOUSEHOLD</td>
               <td>$15.00</td>
             </tr>
             <tr>
-              <td>SINGLE (UNWAGED)</td>
+              <td class="members">SINGLE (UNWAGED)</td>
               <td>$5.00</td>
             </tr>
             <tr>
-              <td>FAMILY (UNWAGED)</td>
+              <td class="members">FAMILY (UNWAGED)</td>
               <td>$8.00</td>
             </tr>
             <tr>
-              <td>CORPORATE</td>
+              <td class="members">CORPORATE</td>
               <td>$50.00</td>
             </tr>
           </table>
@@ -245,10 +415,9 @@
           <img class="seafarers-img"src="images/Seafarers-Nelson.jpg" alt="Seafarers-Nelson Photo">
         </div>
       </div>
-
 <!-- FUNDING SECTION -->
-
-      <div class="funding__container">
+      <!-- <div class="funding__container">
+        <hr><br><br><br>
         <h1>FUNDING</h1>
         <p>The Society's work over the last year has beeen "ground-breaking".
           We have supported groups including the Environmental Defence Society and Sustain Our Sounds in cases involving NZ King Salmon's
@@ -268,7 +437,7 @@
         <p>We ask for your support in our work in securing balanced development of the coastline.
           The sustainable use of this "resource" will not only guarantee the protection of ecological values in our area but will also create a diverse range of opportunities for the people living here.
           We would be happy to provide additional information such as references and letters of support, auditors report and Chairman’s Report and copies of various cases presented by our Society.</p>
-        </div>
+        </div> -->
     </section>
 
 <!-- FOOTER -->
@@ -277,7 +446,7 @@
 <!-- CONTACT -->
         <div class="contact__container">
           <p class="footer-heading">CONTACT</p>
-          <div class="row">
+          <div class="footer-row">
             <div class="col">
               <p>Secretary</p>
             </div>
@@ -288,7 +457,7 @@
               <p><a href="mailto:em@nelsonhaven.org.nz">em@nelsonhaven.org.nz</a></p>
             </div>
           </div>
-          <div class="row">
+          <div class="footer-row">
             <div class="col">
               <p>Website</p>
             </div>
@@ -299,7 +468,7 @@
               <p><a href="mailto:sigi@ts.co.nz">sigi@ts.co.nz</a></p>
             </div>
           </div>
-          <div class="row">
+          <div class="footer-row">
             <div class="col">
               <p>Chair</p>
             </div>
@@ -310,7 +479,7 @@
               <p>03 548 3323</p>
             </div>
           </div>
-          <div class="row">
+          <div class="footer-row">
             <div class="col">
               <p>Treasurer</p>
             </div>

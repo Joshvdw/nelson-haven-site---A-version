@@ -29,6 +29,14 @@
   background: $link-color;
 }
 
+.card-donate-btn {
+  background: $link-color;
+  width: 100px;
+  height: 35px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
 // UPLOAD BUTTON
 .upload-btn {
   background: $btn-color;
@@ -39,5 +47,5 @@
 // SIGN-UP BUTTON
 .signup-btn {
   background: $btn-color;
-  margin: 50px 0;
+  margin: 40px 0;
 }

@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1710px) {
+  .paragraph__container, .contact__container, .links__container {
+    font-size: 13px;
+  }
+
+  section, .footer__container, .desktop__header {
+    width: 85%;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 1410px) {
+  .paragraph__container, .contact__container, .links__container {
+    font-size: 12px;
+  }
+
+  section, .footer__container, .desktop__header {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+}

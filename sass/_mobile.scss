@@ -1,0 +1,16 @@
+@media only screen and (max-width: 650px) {
+
+// FOOTER
+  footer {
+    height: 500px;
+  }
+  .contact__container, .links__container {
+    width: 100%;
+    font-size: 13px;
+    padding-left: 75px;
+  }
+
+  .contact__container {
+    margin-bottom: 40px;
+  }
+}

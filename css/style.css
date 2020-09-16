@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box; }
 
-.header__container {
+.header__container-desktop, .header__container-mobile {
   width: 100%;
   height: 128px;
   font-family: "Montserrat", sans-serif;
@@ -21,9 +21,11 @@
   width: 75%;
   margin: 0 auto; }
 
-.nav__container {
-  float: left; }
-  .nav__container li {
+.nav__container-desktop {
+  float: left;
+  margin: 75px 0 0 20px;
+  font-size: 18px; }
+  .nav__container-desktop li {
     display: inline;
     padding: 5px 10px;
     font-size: 14px;
@@ -31,27 +33,8 @@
     color: white;
     cursor: pointer; }
 
-.desktop-nav {
-  margin: 75px 0 0 20px;
-  font-size: 18px; }
-
-.mobile-nav li a {
-  text-decoration: none;
-  color: white; }
-
-.mobile__header {
+.header__container-mobile {
   display: none; }
-
-.fas {
-  color: white; }
-
-hr {
-  opacity: 0.8;
-  height: 0.2px;
-  position: relative;
-  top: 85px;
-  right: 230px;
-  width: 225px; }
 
 .cta__btn {
   width: 150px;
@@ -77,6 +60,13 @@ hr {
 .donate-btn {
   background: #D0232D; }
 
+.card-donate-btn {
+  background: #D0232D;
+  width: 100px;
+  height: 35px;
+  padding-top: 10px;
+  margin-top: 10px; }
+
 .upload-btn {
   background: #FFA800;
   margin: 0 auto;
@@ -84,7 +74,7 @@ hr {
 
 .signup-btn {
   background: #FFA800;
-  margin: 50px 0; }
+  margin: 40px 0; }
 
 .img__container {
   float: right;
@@ -97,11 +87,18 @@ hr {
   width: 100%; }
 
 .seafarers-img {
-  height: 500px;
+  height: 480px;
   width: 100%; }
+
+.donate-img {
+  height: 535px;
+  width: 50%; }
 
 .photo__container {
   margin: 0 auto;
+  width: 100%; }
+
+.photo-style {
   width: 100%; }
 
 .gallery-wrapper {
@@ -120,6 +117,133 @@ hr {
 
 .right-img {
   padding: 5px 0 5px 5px; }
+
+.row > .column {
+  padding: 0 8px; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 33.33%;
+  margin-top: 12px; }
+  .column :hover {
+    cursor: pointer; }
+
+.col-thumbnail {
+  width: 16.66%;
+  padding: 0 2.5px; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black; }
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px; }
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* Hide the slides by default */
+.mySlides {
+  display: none; }
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white; }
+
+img.demo {
+  opacity: 0.6; }
+
+.active,
+.demo:hover {
+  opacity: 1; }
+
+img.hover-shadow {
+  transition: 0.3s; }
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+section {
+  width: 75%;
+  display: block;
+  margin: 50px auto;
+  font-family: "Montserrat", sans-serif; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
 
 .paragraph__container {
   float: left;
@@ -161,20 +285,26 @@ h1 {
   font-size: 14px; }
 
 .funding__container {
-  margin-top: 25px; }
+  margin-top: 40px; }
   .funding__container p {
     margin-bottom: 20px; }
+
+.donate__container {
+  margin-top: 20px; }
 
 .membership__table {
   float: left;
   font-size: 1rem;
   width: 100%;
-  margin: 25px 0 50px 0; }
+  margin: 20px 0 40px 0; }
   .membership__table th {
     text-align: left;
     padding: 20px 0; }
   .membership__table td {
     padding: 10px 0; }
+
+.members {
+  color: #55AACC; }
 
 footer {
   width: 100%;
@@ -201,7 +331,7 @@ footer {
   padding-left: 20px;
   font-size: 14px; }
 
-.row {
+.footer-row {
   display: flex; }
 
 .col {
@@ -216,16 +346,163 @@ footer {
   .links__container a p {
     padding: 10px 0; }
 
-section {
-  width: 75%;
-  display: block;
-  margin: 50px auto;
-  clear: both;
+.donate__tabs {
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: #55AACC; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: none;
+  background: #FFA800 !important; }
+
+.ui-widget {
   font-family: "Montserrat", sans-serif; }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table; }
+.ui-widget-header {
+  background: #eee;
+  border: none !important; }
+
+#tabs-1, #tabs-2, #tabs-3 {
+  height: 485px; }
+
+#tabs-2 li, #tabs-3 li {
+  list-style-type: none;
+  padding-bottom: 10px; }
+#tabs-2 p, #tabs-3 p {
+  padding-bottom: 5px; }
+#tabs-2 a, #tabs-3 a {
+  color: #55AACC; }
+
+.long-input {
+  width: 50%;
+  margin-top: 10px;
+  height: 30px; }
+
+.expiry-cvc_containers {
+  width: 50%; }
+
+.expiry__container {
+  float: left;
+  width: 50%; }
+
+#expiry1 {
+  width: 30%;
+  margin-top: 10px;
+  padding-right: 10px;
+  height: 30px; }
+
+#expiry2 {
+  width: 40%;
+  margin-top: 10px;
+  height: 30px; }
+
+.cvc__container {
+  float: right;
+  width: 50%; }
+
+#cvc {
+  width: 40%;
+  margin-top: 10px;
+  height: 30px; }
+
+@media only screen and (max-width: 1710px) {
+  .paragraph__container, .contact__container, .links__container {
+    font-size: 13px; }
+
+  section, .footer__container, .desktop__header {
+    width: 85%; }
+
+  h1 {
+    font-size: 1.8em; } }
+@media only screen and (max-width: 1410px) {
+  .paragraph__container, .contact__container, .links__container {
+    font-size: 12px; }
+
+  section, .footer__container, .desktop__header {
+    width: 95%; }
+
+  h1 {
+    font-size: 1.7em; } }
+@media only screen and (max-width: 920px) {
+  section {
+    font-size: 12px; }
+
+  .header__container-desktop {
+    display: none; }
+
+  .header__container-mobile {
+    display: block; }
+
+  .logo__container {
+    width: 100%; }
+
+  .logo__sub-container {
+    width: 196px;
+    margin: 0 auto; }
+
+  .nav__container-mobile {
+    float: right;
+    display: none;
+    position: absolute;
+    top: 128px;
+    right: 0;
+    width: 20%;
+    background: #282F47; }
+    .nav__container-mobile li {
+      display: block;
+      padding: 10px;
+      font-size: 15px;
+      text-decoration: none;
+      color: white;
+      cursor: pointer; }
+
+  .mobile-nav li a {
+    text-decoration: none;
+    color: white; }
+
+  .membership-btn__container, .donate-btn__container {
+    margin-top: 5px;
+    padding: 10px 0; }
+
+  .membership-btn, .donate-btn {
+    height: 40px;
+    border-radius: 5px;
+    width: 150px;
+    padding-top: 11px;
+    text-align: center;
+    margin-right: 10px; }
+    .membership-btn p, .donate-btn p {
+      font-size: 15px; }
+
+  .donate-btn {
+    margin-bottom: 15px; }
+
+  .fas {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 75px;
+    right: 15px; }
+
+  hr {
+    margin: 10px; } }
+@media only screen and (max-width: 650px) {
+  footer {
+    height: 500px; }
+
+  .contact__container, .links__container {
+    width: 100%;
+    font-size: 13px;
+    padding-left: 75px; }
+
+  .contact__container {
+    margin-bottom: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

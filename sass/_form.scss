@@ -1,0 +1,83 @@
+.donate__tabs {
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+  font-family: $primary-font;
+  font-size: 14px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: $secondary-color;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: none;
+    background: $btn-color!important;
+}
+
+.ui-widget {
+  font-family: $primary-font;
+}
+
+.ui-widget-header {
+  background: #eee;
+  border: none!important;
+}
+
+#tabs-1, #tabs-2, #tabs-3 {
+  height: 485px;
+}
+
+#tabs-2, #tabs-3 {
+  li {
+    list-style-type: none;
+    padding-bottom: 10px;
+  }
+  p {
+    padding-bottom: 5px;
+  }
+  a {
+    color: $secondary-color;
+  }
+
+}
+
+.long-input {
+  width: 50%;
+  margin-top: 10px;
+  height: 30px;
+}
+
+.expiry-cvc_containers {
+  width: 50%;
+}
+
+.expiry__container {
+  float: left;
+  width: 50%;
+}
+
+#expiry1 {
+  width: 30%;
+  margin-top: 10px;
+  padding-right: 10px;
+  height: 30px;
+}
+
+#expiry2 {
+  width: 40%;
+  margin-top: 10px;
+  height: 30px;
+}
+
+.cvc__container {
+  float: right;
+  width: 50%;
+}
+
+#cvc {
+  width: 40%;
+  margin-top: 10px;
+  height: 30px;
+}

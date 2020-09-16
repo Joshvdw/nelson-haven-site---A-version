@@ -1,0 +1,86 @@
+@media only screen and (max-width: 920px) {
+  section {
+    font-size: 12px;
+  }
+
+// MOBILE NAV
+  .header__container-desktop {
+    display: none;
+  }
+
+  .header__container-mobile {
+    display: block;
+  }
+
+  .logo__container {
+    width: 100%;
+  }
+
+  .logo__sub-container {
+    width: 196px;
+    margin: 0 auto;
+  }
+
+  .nav__container-mobile {
+    float: right;
+    display: none;
+    position: absolute;
+    top: 128px;
+    right: 0;
+    width: 20%;
+    background: $primary-color;
+    li {
+      display: block;
+      padding: 10px;
+      font-size: 15px;
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .mobile-nav {
+    li a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .membership-btn__container, .donate-btn__container {
+    margin-top: 5px;
+    padding: 10px 0;
+  }
+
+  .membership-btn, .donate-btn {
+    height: 40px;
+    border-radius: 5px;
+    width: 150px;
+    padding-top: 11px;
+    text-align: center;
+    margin-right: 10px;
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .donate-btn {
+    margin-bottom: 15px;
+  }
+
+  // HAMBURGER MENU
+  .fas {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 75px;
+    right: 15px;
+  }
+
+  hr {
+    margin: 10px;
+  }
+}
+
+// FOOTER
+  

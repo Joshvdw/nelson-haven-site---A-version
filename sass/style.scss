@@ -7,17 +7,7 @@
 @import 'paragraph';
 @import 'table';
 @import 'footer';
-
-section {
-  width: 75%;
-  display: block;
-  margin: 50px auto;
-  clear: both;
-  font-family: $primary-font;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+@import 'form';
+@import 'laptop';
+@import 'tablet';
+@import 'mobile';

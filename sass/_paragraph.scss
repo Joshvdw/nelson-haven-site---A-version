@@ -1,3 +1,16 @@
+section {
+  width: 75%;
+  display: block;
+  margin: 50px auto;
+  font-family: $primary-font;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .paragraph__container {
   float: left;
   width: 50%;
@@ -47,9 +60,12 @@ h1 {
 }
 
 .funding__container {
-  margin-top: 25px;
+  margin-top: 40px;
   p {
     margin-bottom: 20px;
   }
+}
 
+.donate__container {
+  margin-top: 20px;
 }

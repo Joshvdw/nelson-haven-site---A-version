@@ -2,7 +2,7 @@
   float: left;
   font-size: 1rem;
   width: 100%;
-  margin: 25px 0 50px 0;
+  margin: 20px 0 40px 0;
   th {
     text-align: left;
     padding: 20px 0;
@@ -10,4 +10,8 @@
   td {
     padding: 10px 0;
   }
+}
+
+.members {
+  color: $secondary-color;
 }
