@@ -1,4 +1,46 @@
 @media only screen and (max-width: 650px) {
+// NAV
+  .nav__container-mobile {
+    width: 33.33%;
+    li {
+      font-size: 14px;
+    }
+  }
+// BUTTONS
+
+  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-img {
+    width: 100%;
+    height: auto;
+  }
+
+// PHOTOS
+  .column {
+    width: 100%;
+  }
+
+  .col-thumbnail {
+    width: 50%;
+  }
+
+  .demo {
+    height: 170px;
+  }
+
+  .hover-shadow {
+    height: auto;
+  }
+
+  .upload__text {
+    font-size: 14px;
+  }
 
 // FOOTER
   footer {
@@ -6,8 +48,6 @@
   }
   .contact__container, .links__container {
     width: 100%;
-    font-size: 13px;
-    padding-left: 75px;
   }
 
   .contact__container {

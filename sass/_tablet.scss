@@ -27,7 +27,7 @@
     position: absolute;
     top: 128px;
     right: 0;
-    width: 20%;
+    width: 25%;
     background: $primary-color;
     li {
       display: block;
@@ -46,20 +46,23 @@
     }
   }
 
+// BUTTONS
   .membership-btn__container, .donate-btn__container {
     margin-top: 5px;
     padding: 10px 0;
+    float: left;
   }
 
   .membership-btn, .donate-btn {
     height: 40px;
     border-radius: 5px;
-    width: 150px;
+    width: 110%;
     padding-top: 11px;
+    margin-left: 10px;
     text-align: center;
     margin-right: 10px;
     p {
-      font-size: 15px;
+      font-size: 14px;
     }
   }
 
@@ -67,20 +70,75 @@
     margin-bottom: 15px;
   }
 
-  // HAMBURGER MENU
+// HAMBURGER MENU
   .fas {
     color: white;
     font-size: 40px;
     cursor: pointer;
     position: absolute;
-    top: 75px;
-    right: 15px;
+    top: 80px;
+    right: 20px;
   }
 
   hr {
     margin: 10px;
   }
-}
+
+// PARAGRAPHS
+
+
+
+
+  .p-style {
+    padding-right: 20px;
+  }
+
+// IMAGES
+
+  .ferry-img {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .seafarers-img {
+    height: auto;
+  }
+
+// PHOTOS
+  .column {
+    width: 50%;
+    float: left;
+  }
+
+  .demo {
+    height: 260.984px;
+  }
+
+  .hover-shadow {
+    height: 273.078px;
+  }
+
+// DONATE
+  .donate__tabs {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .donate-img {
+    width: 100%;
+    height: 235px;
+  }
+
+  .donate-text {
+    // width: 50%
+  }
+
+  .long-input {
+    width: 60%;
+  }
 
 // FOOTER
-  
+  .contact__container, .links__container {
+    font-size: 12px;
+  }
+}

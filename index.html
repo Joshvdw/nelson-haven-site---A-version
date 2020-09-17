@@ -153,29 +153,30 @@
     <section id="photos">
       <h1>PHOTOS</h1>
       <div class="photo__container clearfix">
-<!-- LIGHTBOX -->
-          <div class="row">
-            <div class="column">
-              <img src="images/Haulashore-Island.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow photo-style">
-            </div>
-            <div class="column">
-              <img src="images/Back-Beach.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow photo-style">
-            </div>
-            <div class="column">
-              <img src="images/Tahunanui.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow photo-style">
-            </div>
-            <div class="column">
-              <img src="images/Pine-Factory.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow photo-style">
-            </div>
-            <div class="column">
-              <img src="images/Seafarers-Nelson.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow photo-style">
-            </div>
-            <div class="column">
-              <img src="images/Nelson-Estuary.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow photo-style">
-            </div>
-          </div>
 
-          <!-- The Modal/Lightbox -->
+<!-- LIGHTBOX -->
+        <div class="row">
+          <div class="column">
+            <img src="images/Haulashore-Island.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow photo-style">
+          </div>
+          <div class="column">
+            <img src="images/Back-Beach.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow photo-style">
+          </div>
+          <div class="column">
+            <img src="images/Tahunanui.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow photo-style">
+          </div>
+          <div class="column">
+            <img src="images/Pine-Factory.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow photo-style">
+          </div>
+          <div class="column">
+            <img src="images/Seafarers-Nelson.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow photo-style img-5">
+          </div>
+          <div class="column">
+            <img src="images/Nelson-Estuary.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow photo-style img-6">
+          </div>
+        </div>
+
+
           <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
@@ -245,40 +246,6 @@
               </div>
             </div>
           </div>
-        <!-- <div class="gallery-wrapper left-img"> -->
-          <!-- <img id="myImg" src="images/Haulashore-Island.jpg" alt="Haulashore-Island"> -->
-
-          <!-- Modal -->
-          <!-- <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-          </div>
-          <img src="images/Haulashore-Island.jpg" alt="Photo of Haulashore-Island"> -->
-        <!-- </div>
-        <div class="gallery-wrapper middle-img">
-          <img id="myImg" src="images/Back-Beach.jpg" alt="Back-Beach"> -->
-
-          <!-- Modal -->
-          <!-- <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-          </div> -->
-          <!-- <img src="images/Back-Beach.jpg" alt="Photo of Back-Beach"> -->
-        <!-- </div> -->
-        <!-- <div class="gallery-wrapper right-img">
-          <img src="images/Tahunanui.jpg" alt="Photo of Tahunanui">
-        </div>
-        <div class="gallery-wrapper left-img">
-          <img src="images/Pine-Factory.jpg" alt="Photo of Pine-Factory">
-        </div>
-        <div class="gallery-wrapper middle-img">
-          <img src="images/Nelson-Estuary.jpg" alt="Photo of Nelson-Estuary">
-        </div>
-        <div class="gallery-wrapper right-img">
-          <img src="images/Seafarers-Nelson.jpg" alt="Photo of Seafarers-Nelson">
-        </div> -->
       </div>
 
       <div class="upload__container">
@@ -315,8 +282,6 @@
                   <input type="text" id="lname" class="long-input" name="lname"><br><br>
                   <label for="email">Email</label><br>
                   <input type="text" id="email" class="long-input" name="email"><br><br><br>
-                  <!-- <label for="cardname">Card name</label><br>
-                  <input type="text" id="cardname" class="long-input" name="cardname"><br><br> -->
                   <label for="cardno">Card number</label><br>
                   <input type="text" id="cardno" class="long-input" name="cardno"><br><br>
                   <div class="expiry-cvc_containers clearfix">
@@ -378,7 +343,7 @@
         <h1>MEMBERSHIPS</h1>
         <div class="paragraph__container membership-text">
           <p>Please Consider joining the Society or give a donation</p>
-          <table class="membership__table">
+          <table class="membership__table ">
             <tr>
               <th>MEMBERSHIP FEES</th>
               <th>AMOUNT</th>
@@ -404,11 +369,14 @@
               <td>$50.00</td>
             </tr>
           </table>
-          <p>Donations to Friends are tax deductible.</p>
+          <div class="membership-text">
+            <p>Donations to Friends are tax deductible.</p>
 
-          <div class="cta__btn signup-btn">
-            <p>SIGN UP</p>
+            <div class="cta__btn signup-btn">
+              <p>SIGN UP</p>
+            </div>
           </div>
+
         </div>
 
         <div class="img__container membership-img">

@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('.nav-home').css('font-weight', '600')
     $('.nav-history, .nav-photos').css('font-weight', 'normal')
   });
-  $(".logo__container").click(function(){
+  $(".logo__img").click(function(){
     $('#history, #photos, #donations, #memberships').hide();
     $('#home').show();
     $('.nav-home').css('font-weight', '600')
@@ -43,24 +43,22 @@ $(document).ready(function(){
     $( "#tabs" ).tabs();
   });
 
-// MOBILR NAV
+// MOBILe NAV
   $(".fas").click(function(){
     $(".nav__container-mobile").toggle();
     // $(".logo__sub-container").css("margin", "0 5px")
   });
 
-  $(".nav-home, .nav-history, .nav-photos, .nav-donations, .nav-membersips").click(function(){
+  $(".nav-home, .nav-history, .nav-photos, .nav-donations, .nav-memberships").click(function(){
     $(".nav__container-mobile").hide();
   });
 });
 
 // LIGHTBOX
-// Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
 
-// Close the Modal
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
@@ -68,12 +66,10 @@ function closeModal() {
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
