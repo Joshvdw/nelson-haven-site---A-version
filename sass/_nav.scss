@@ -1,7 +1,6 @@
 // HEADER
 .header__container-desktop, .header__container-mobile {
-  width: 100%;
-  height: 128px;
+  @include dimensions (100%,128px);
   font-family: $primary-font;
   background: $primary-color;
   clear: both;
@@ -37,10 +36,6 @@
     color: white;
     cursor: pointer;
   }
-}
-
-// DESKTOP NAV
-.desktop-nav {
 }
 
 // MOBILE HEADER

@@ -6,9 +6,9 @@
       font-size: 14px;
     }
   }
-// BUTTONS
 
-  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs {
+// BUTTONS
+  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs .funding__container p {
     font-size: 12px;
   }
 
@@ -17,8 +17,7 @@
   }
 
   .home-img {
-    width: 100%;
-    height: auto;
+    @include dimensions (100%,auto);
   }
 
 // PHOTOS
@@ -40,6 +39,16 @@
 
   .upload__text {
     font-size: 14px;
+  }
+
+// MEMBERSHIP
+  .membership__table {
+    font-size: 0.7rem;
+    margin: 10px 0;
+  }
+
+  .membership-text p {
+    margin-bottom: 0;
   }
 
 // FOOTER

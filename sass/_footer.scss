@@ -1,7 +1,6 @@
 // FOOTER
 footer {
-  width: 100%;
-  height: 290px;
+  @include dimensions (100%,290px);
   background: $primary-color;
   font-family: $primary-font;
   color: white;

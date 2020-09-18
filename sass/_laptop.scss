@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1710px) {
-  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs {
+  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs, .funding__container p {
     font-size: 13px;
   }
 
@@ -8,10 +8,8 @@
   }
 
   .seafarers-img {
-    height: 480px;
-    width: 100%;
+    @include dimensions (100%,480px);
   }
-
 
   section, .footer__container, .desktop__header {
     width: 85%;
@@ -23,7 +21,7 @@
 }
 
 @media only screen and (max-width: 1410px) {
-  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs {
+  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs .funding__container p {
     font-size: 12px;
   }
 
@@ -35,16 +33,14 @@
     font-size: 1.7em;
   }
 
-// DONATE
-  .donate-img {
-    height: 535px;
-    width: 50%;
+  .home-img {
+    height: 480px;
   }
 
+// DONATE
   .long-input {
     width: 75%;
   }
-
 }
 
 @media only screen and (max-width: 1150px) {
@@ -57,11 +53,12 @@
     width: 100%;
   }
 
-  .paragraph__container, .p-style, .donate__tabs {
+  .paragraph__container, .p-style, .donate__tabs .funding__container p {
     font-size: 14px;
   }
 
-  .membership__table {
+  .membership__table tr {
+    width: 40%;
   }
 
   .membership-text {
@@ -74,9 +71,7 @@
 
   .img__container {
     float: left;
-    width: 100%;
-    padding-right: 20px;
-    height: auto;
+    @include dimensions (100%,auto);
   }
 
   .home-img img {
@@ -87,8 +82,20 @@
     margin-bottom: 20px;
   }
 
-  .donate-img {
-    height: 735px;
+  .seafarers-img {
+    height: auto;
+  }
+
+  .donate__tabs {
     width: 100%;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .donate-img {
+    width: 100%;
+    img {
+      height: auto;
+    }
   }
 }

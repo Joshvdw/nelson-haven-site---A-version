@@ -54,9 +54,8 @@
   }
 
   .membership-btn, .donate-btn {
-    height: 40px;
+    @include dimensions (110%,40px);
     border-radius: 5px;
-    width: 110%;
     padding-top: 11px;
     margin-left: 10px;
     text-align: center;
@@ -85,26 +84,18 @@
   }
 
 // PARAGRAPHS
-
-
-
-
   .p-style {
     padding-right: 20px;
   }
 
 // IMAGES
-
   .ferry-img {
     height: auto;
     margin-bottom: 20px;
   }
 
-  .seafarers-img {
-    height: auto;
-  }
 
-// PHOTOS
+// PHOTOS SECTION
   .column {
     width: 50%;
     float: left;
@@ -119,18 +110,8 @@
   }
 
 // DONATE
-  .donate__tabs {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-
   .donate-img {
-    width: 100%;
-    height: 235px;
-  }
-
-  .donate-text {
-    // width: 50%
+    height: auto;
   }
 
   .long-input {

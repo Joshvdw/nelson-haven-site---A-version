@@ -7,13 +7,13 @@
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-    border: none;
-    background: $secondary-color;
+  border: none;
+  background: $secondary-color;
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-    border: none;
-    background: $btn-color!important;
+  border: none;
+  background: $btn-color!important;
 }
 
 .ui-widget {
@@ -40,13 +40,11 @@
   a {
     color: $secondary-color;
   }
-
 }
 
 .long-input {
-  width: 50%;
+  @include dimensions (50%,30px);
   margin-top: 10px;
-  height: 30px;
 }
 
 .expiry-cvc_containers {
@@ -58,26 +56,18 @@
   width: 50%;
 }
 
-#expiry1 {
-  width: 30%;
-  margin-top: 10px;
-  padding-right: 10px;
-  height: 30px;
-}
-
-#expiry2 {
-  width: 40%;
-  margin-top: 10px;
-  height: 30px;
-}
-
 .cvc__container {
   float: right;
   width: 50%;
 }
 
-#cvc {
-  width: 40%;
+#expiry1 {
+  @include dimensions (30%,30px);
   margin-top: 10px;
-  height: 30px;
+  padding-right: 10px;
+}
+
+#expiry2, #cvc {
+  @include dimensions (40%,30px);
+  margin-top: 10px;
 }

@@ -5,23 +5,19 @@
   padding: 0 20px;
 }
 
-.home-img {
-  padding-right: 20px;
-}
-
 .ferry-img {
-  height: 515px;
-  width: 100%;
+  @include dimensions (100%,515px);
 }
 
 .seafarers-img {
-  height: 480px;
-  width: 100%;
+  @include dimensions (100%,480px);
 }
 
 .donate-img {
-  height: 535px;
   width: 60%;
+  img {
+    @include dimensions (100%,535px);
+  }
 }
 
 // PHOTO SECTION
@@ -60,14 +56,13 @@
 }
 
 .modal {
+  @include dimensions (100%,100%);
   display: none;
   position: fixed;
   z-index: 1;
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
   overflow: auto;
   background-color: black;
 }

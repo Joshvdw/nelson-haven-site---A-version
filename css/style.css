@@ -55,26 +55,23 @@
   padding-left: 20px;
   margin-top: 50px; }
 
-.membership-btn {
+.membership-btn, .upload-btn, .signup-btn {
   background: #FFA800; }
 
-.donate-btn {
+.donate-btn, .card-donate-btn {
   background: #D0232D; }
 
 .card-donate-btn {
-  background: #D0232D;
   width: 100px;
   height: 35px;
   padding-top: 10px;
   margin-top: 10px; }
 
 .upload-btn {
-  background: #FFA800;
   margin: 0 auto;
   margin-top: 50px; }
 
 .signup-btn {
-  background: #FFA800;
   margin: 40px 0; }
 
 .img__container {
@@ -83,20 +80,19 @@
   overflow: hidden;
   padding: 0 20px; }
 
-.home-img {
-  padding-right: 20px; }
-
 .ferry-img {
-  height: 515px;
-  width: 100%; }
+  width: 100%;
+  height: 515px; }
 
 .seafarers-img {
-  height: 480px;
-  width: 100%; }
+  width: 100%;
+  height: 480px; }
 
 .donate-img {
-  height: 535px;
   width: 60%; }
+  .donate-img img {
+    width: 100%;
+    height: 535px; }
 
 .photo__container {
   margin: 0 auto;
@@ -125,14 +121,14 @@
   padding: 0 2.5px; }
 
 .modal {
+  width: 100%;
+  height: 100%;
   display: none;
   position: fixed;
   z-index: 1;
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
   overflow: auto;
   background-color: black; }
 
@@ -261,10 +257,10 @@ h1 {
   padding: 0 20px;
   font-size: 14px; }
 
-.funding__container {
-  margin-top: 40px; }
-  .funding__container p {
-    margin-bottom: 20px; }
+.funding__container p {
+  margin-bottom: 20px; }
+.funding__container hr {
+  margin: auto 20px; }
 
 .donate__container {
   margin-top: 20px; }
@@ -358,8 +354,8 @@ footer {
 
 .long-input {
   width: 50%;
-  margin-top: 10px;
-  height: 30px; }
+  height: 30px;
+  margin-top: 10px; }
 
 .expiry-cvc_containers {
   width: 50%; }
@@ -368,36 +364,31 @@ footer {
   float: left;
   width: 50%; }
 
-#expiry1 {
-  width: 30%;
-  margin-top: 10px;
-  padding-right: 10px;
-  height: 30px; }
-
-#expiry2 {
-  width: 40%;
-  margin-top: 10px;
-  height: 30px; }
-
 .cvc__container {
   float: right;
   width: 50%; }
 
-#cvc {
-  width: 40%;
+#expiry1 {
+  width: 30%;
+  height: 30px;
   margin-top: 10px;
-  height: 30px; }
+  padding-right: 10px; }
+
+#expiry2, #cvc {
+  width: 40%;
+  height: 30px;
+  margin-top: 10px; }
 
 @media only screen and (max-width: 1710px) {
-  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs {
+  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs, .funding__container p {
     font-size: 13px; }
 
   .ferry-img {
     height: 460px; }
 
   .seafarers-img {
-    height: 480px;
-    width: 100%; }
+    width: 100%;
+    height: 480px; }
 
   section, .footer__container, .desktop__header {
     width: 85%; }
@@ -405,7 +396,7 @@ footer {
   h1 {
     font-size: 1.8em; } }
 @media only screen and (max-width: 1410px) {
-  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs {
+  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs .funding__container p {
     font-size: 12px; }
 
   section, .footer__container, .desktop__header {
@@ -414,9 +405,8 @@ footer {
   h1 {
     font-size: 1.7em; }
 
-  .donate-img {
-    height: 535px;
-    width: 50%; }
+  .home-img {
+    height: 480px; }
 
   .long-input {
     width: 75%; } }
@@ -427,8 +417,11 @@ footer {
   .paragraph__container {
     width: 100%; }
 
-  .paragraph__container, .p-style, .donate__tabs {
+  .paragraph__container, .p-style, .donate__tabs .funding__container p {
     font-size: 14px; }
+
+  .membership__table tr {
+    width: 40%; }
 
   .membership-text {
     width: 100%; }
@@ -439,7 +432,6 @@ footer {
   .img__container {
     float: left;
     width: 100%;
-    padding-right: 20px;
     height: auto; }
 
   .home-img img {
@@ -448,9 +440,18 @@ footer {
   .ferry-img {
     margin-bottom: 20px; }
 
+  .seafarers-img {
+    height: auto; }
+
+  .donate__tabs {
+    width: 100%;
+    padding-right: 20px;
+    margin-bottom: 20px; }
+
   .donate-img {
-    height: 735px;
-    width: 100%; } }
+    width: 100%; }
+    .donate-img img {
+      height: auto; } }
 @media only screen and (max-width: 920px) {
   section {
     font-size: 12px; }
@@ -494,9 +495,9 @@ footer {
     float: left; }
 
   .membership-btn, .donate-btn {
+    width: 110%;
     height: 40px;
     border-radius: 5px;
-    width: 110%;
     padding-top: 11px;
     margin-left: 10px;
     text-align: center;
@@ -525,9 +526,6 @@ footer {
     height: auto;
     margin-bottom: 20px; }
 
-  .seafarers-img {
-    height: auto; }
-
   .column {
     width: 50%;
     float: left; }
@@ -538,13 +536,8 @@ footer {
   .hover-shadow {
     height: 273.078px; }
 
-  .donate__tabs {
-    width: 100%;
-    margin-bottom: 25px; }
-
   .donate-img {
-    width: 100%;
-    height: 235px; }
+    height: auto; }
 
   .long-input {
     width: 60%; }
@@ -557,7 +550,7 @@ footer {
     .nav__container-mobile li {
       font-size: 14px; }
 
-  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs {
+  .paragraph__container, .contact__container, .links__container, .p-style, .donate__tabs .funding__container p {
     font-size: 12px; }
 
   h1 {
@@ -581,6 +574,13 @@ footer {
 
   .upload__text {
     font-size: 14px; }
+
+  .membership__table {
+    font-size: 0.7rem;
+    margin: 10px 0; }
+
+  .membership-text p {
+    margin-bottom: 0; }
 
   footer {
     height: 500px; }
