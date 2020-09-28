@@ -281,7 +281,7 @@ h1 {
 
 footer {
   width: 100%;
-  height: 290px;
+  height: auto;
   background: #282F47;
   font-family: "Montserrat", sans-serif;
   color: white; }
@@ -318,6 +318,15 @@ footer {
   font-size: 14px; }
   .links__container a p {
     padding: 10px 0; }
+
+.copyright__container {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.8; }
+  .copyright__container p {
+    font-weight: 400;
+    font-size: 12px; }
 
 .donate__tabs {
   width: 40%;
@@ -582,13 +591,14 @@ footer {
   .membership-text p {
     margin-bottom: 0; }
 
-  footer {
-    height: 500px; }
-
   .contact__container, .links__container {
     width: 100%; }
 
   .contact__container {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+
+  .copyright__container {
+    text-align: left;
+    margin-left: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

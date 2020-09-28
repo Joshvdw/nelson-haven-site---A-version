@@ -1,6 +1,6 @@
 // FOOTER
 footer {
-  @include dimensions (100%,290px);
+  @include dimensions (100%,auto);
   background: $primary-color;
   font-family: $primary-font;
   color: white;
@@ -47,4 +47,17 @@ footer {
   a p {
     padding: 10px 0;
   }
+}
+
+// COPYRIGHT
+.copyright__container {
+  text-align: center;
+  margin-top: 30px;
+  font-family: $primary-font;
+  opacity: 0.8;
+  p {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
 }

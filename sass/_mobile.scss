@@ -52,14 +52,16 @@
   }
 
 // FOOTER
-  footer {
-    height: 500px;
-  }
   .contact__container, .links__container {
     width: 100%;
   }
 
   .contact__container {
     margin-bottom: 40px;
+  }
+
+  .copyright__container {
+    text-align: left;
+    margin-left: 20px;
   }
 }
